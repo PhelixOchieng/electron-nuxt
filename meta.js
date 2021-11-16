@@ -135,28 +135,28 @@ module.exports = {
       type: 'confirm',
       required: true,
       message: 'Use typescript?',
-      default: false,
+      default: true,
     },
     eslint: {
       when: 'isNotTest',
       type: 'confirm',
       required: true,
       message: 'Use linting with ESLint?',
-      default: false
+      default: true
     },
     unit: {
       when: 'isNotTest',
       type: 'confirm',
       message: 'Set up unit testing with vue-test-utils + AVA?',
       required: true,
-      default: false
+      default: true
     },
     e2e: {
       when: 'isNotTest',
       type: 'confirm',
       message: 'Set up end-to-end testing with Spectron + AVA?',
       required: true,
-      default: false
+      default: true
     }
   },
   helpers: hbsHelpers,
